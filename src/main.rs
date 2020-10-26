@@ -41,7 +41,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
         SubCommand::Run(rc_opts) => {
             println!("Run command: '{:?}'", rc_opts.command);
-            // remotecli::client::client_run(opts).await?;
+            remotecli::client::client_run(rc_opts).await?;
         }
     }
 
